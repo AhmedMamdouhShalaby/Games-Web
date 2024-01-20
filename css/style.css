@@ -1,0 +1,220 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --body-background: #272b30;
+    --text-color: white;
+    --nav-color: #3A497B;
+    --seconde-color: #32383e;
+}
+
+body {
+    background-color: var(--body-background);
+    font-family: "Nerko One", cursive;
+    color: var(--text-color);
+}
+
+/* =============spinner ================= */
+.spinner-parent {
+    background-color: rgba(0, 0, 0, 0.7);
+    z-index: 5;
+}
+
+.spinner {
+    /* border: 6px solid rgba(0, 0, 0, 0.1); */
+    border-top: 6px solid #ff0b0b;
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: spin 0.7s linear infinite;
+    position: absolute;
+}
+
+.spinnerTwo {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 130px;
+    border-bottom: 6px solid #09c;
+    border-radius: 50%;
+    animation: spin 1.5s linear infinite;
+    z-index: 3;
+}
+
+.spinnerThree {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 130px;
+    border-bottom: 6px solid rgb(0, 204, 48);
+    border-radius: 50%;
+    animation: spinTwo 1s linear infinite;
+    z-index: 3;
+}
+
+.spinnerFour {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 130px;
+    height: 130px;
+    border-bottom: 6px solid rgb(0, 61, 204);
+    border-radius: 50%;
+    animation: spinTwo 0.1s linear infinite;
+    z-index: 3;
+}
+
+.spinnerFive {
+    border-bottom: 6px solid rgb(204, 0, 187);
+
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    animation: spinTwo 0.7s linear infinite;
+    position: absolute;
+}
+
+.spinnerSix {
+    border-bottom: 6px solid rgb(204, 204, 0);
+
+    border-radius: 50%;
+    width: 135px;
+    height: 135px;
+    left: 49.8%;
+    top: 49.8%;
+    transform: translate(-50%, -50%);
+    animation: spin 0.7s linear infinite;
+    position: absolute;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+@keyframes spinTwo {
+    0% {
+        transform: rotate(360deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+/* ============end spinner============= */
+/* ======scroll bar======== */
+::-webkit-scrollbar-thumb {
+    background-color: var(--body-background);
+    border-radius: 50px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 0.5) inset;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--seconde-color);
+}
+
+::-webkit-scrollbar {
+    width: 0.625rem;
+}
+
+/* ======end scroll bar======== */
+
+header img {
+    max-height: 30vh;
+    object-fit: cover;
+}
+
+/* position sticky */
+.sticky {
+    position: -webkit-sticky !important;
+    position: sticky !important;
+    top: 0;
+}
+
+.navbar {
+    transform: translatey(-7px);
+}
+
+nav .container {
+    background-color: var(--nav-color);
+}
+
+nav h5 {
+    font-size: 1.5rem;
+}
+
+nav h5 img {
+    max-width: 40px;
+}
+
+nav ul li {
+    text-transform: uppercase;
+    font-weight: lighter;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.active {
+    color: #09c;
+}
+
+nav ul li:hover {
+    color: #09c;
+}
+
+.card .caption h3 {
+    font-size: 1.125rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.card .caption .card-text {
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 200;
+}
+
+.card-body {
+    flex: 1 1 auto;
+    padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
+    color: var(--bs-card-color);
+}
+
+.badge-color {
+    background-color: var(--seconde-color);
+}
+
+.home .card:hover {
+    transform: scale(1.05);
+    filter: grayscale(0);
+}
+
+.home .card {
+    filter: grayscale(0.7);
+    transition: transform 0.5s, filter 0.5s 0.1s;
+}
+
+.detailes {
+    min-height: 100vh;
+    background-color: #272729be;
+}

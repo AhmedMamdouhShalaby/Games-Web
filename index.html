@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="icon" href="favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="spinnerParent" class="spinner-parent d-none w-100 vh-100 position-absolute">
+        <div class="spinner"></div>
+        <div class="spinnerTwo"></div>
+        <div class="spinnerThree"></div>
+        <div class="spinnerFour"></div>
+        <div class="spinnerFive"></div>
+        <div class="spinnerSix"></div>
+
+    </div>
+    <section class="games" id="gamesSection">
+        <header>
+            <img src="wraper.png" class="w-100" alt="header background">
+        </header>
+        <nav class="navbar bg-transparent navbar-expand-lg z-2" id="navbar">
+            <div class="container shadow py-2 px-5 rounded-4">
+                <h5 class="m-0 d-flex justify-content-center align-items-center py-1 text-uppercase">
+                    <img src="logo-sm.png" alt="logo" class="me-2">
+                    game reviews
+                </h5>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <li class="nav-item active ps-3" data-category="mmorpg">
+                            mmorpg
+                        </li>
+                        <li class="nav-item ps-3" data-category="shooter">
+                            shooter
+                        </li>
+                        <li class="nav-item ps-3" data-category="sailing">
+                            sailing
+                        </li>
+                        <li class="nav-item ps-3" data-category="permadeath">
+                            permadeath
+                        </li>
+                        <li class="nav-item ps-3" data-category="superhero">
+                            superhero
+                        </li>
+                        <li class="nav-item ps-3" data-category="pixel">
+                            pixel
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="container my-5 home px-5">
+            <div class="position-relative">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4" id="mainRow">
+                    <!-- <div class="col">
+                        <div class="card h-100 bg-transparent" id="card">
+                            <div class="card-body">
+                                <div class="position-relative mb-3">
+                                    <img src="thumbnail.jpg" class="card-img-top object-fit-cover h-100" alt="">
+                                </div>
+                                <div class="caption">
+                                    <div class="hstack justify-content-between">
+                                        <h3 class="h6 small">Diablo Immortal</h3>
+                                        <span class="badge text-bg-primary p-2">Free</span>
+                                    </div>
+                                    <p class="card-text small text-center opacity-50">
+                                        Built,for,mobile,and,also,released,on,PC,</p>
+                                </div>
+                            </div>
+                            <footer class="card-footer small hstack justify-content-between">
+                                <span class="badge badge-color">MMOARPG</span>
+                                <span class="badge badge-color">PC (Windows)</span>
+                            </footer>
+                        </div>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="detailes position-absolute top-0 bottom-0 start-0 end-0 w-100 d-none z-3" id="detailes">
+
+    </section>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="js/newmain.js"></script>
+</body>
+
+</html>
