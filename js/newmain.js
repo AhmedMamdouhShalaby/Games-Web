@@ -1,4 +1,18 @@
-const spinnerParent = document.getElementById('spinnerParent')
+const spinnerParent = document.getElementById('spinnerParent');
+const navbar = document.getElementById('navbar');
+const sticky = navbar.offsetTop;
+
+function handleScroll() {
+    if (window.pageYOffset >= sticky) {
+        navbar.classList.add('sticky');
+    } else {
+        navbar.classList.remove('sticky');
+    }
+}
+
+// Listen for the scroll event
+window.addEventListener('scroll', handleScroll);
+
 class GameApp {
     constructor() {
         this.allgames = [];
